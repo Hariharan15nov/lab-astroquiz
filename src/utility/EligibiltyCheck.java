@@ -12,6 +12,7 @@ public  class EligibilityCheck  extends  BasicEligibility implements Eligibility
 	     System.out.println(age);
 		if((18 <= age && age<= 35)&&(155 <=height&&height<=170)&&(55<= weight&&weight<= 90)&&(country.equals("ProGrad")) )
 			return true;
+		else
 		return false;
 	}
 	@Override
@@ -20,13 +21,14 @@ public  class EligibilityCheck  extends  BasicEligibility implements Eligibility
 		int score=Integer.parseInt(points);
 		if(score>50)
 			return true;
+		else
 		return false;
 	}
 	public	boolean basicEligibilityCheck(User user)
 	{
 		if(checkUser(user))
 			return true;
-		
+		else
 		return false;
 	}
 }
